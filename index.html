@@ -1,229 +1,213 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.4">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>志戸平温泉家族旅行プラン</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 800px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        h1, h2, h3 {
+            color: #0056b3;
+        }
+        h1 {
+            border-bottom: 2px solid #0056b3;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            margin-top: 30px;
+            border-left: 5px solid #0056b3;
+            padding-left: 10px;
+        }
+        h3 {
+            margin-top: 20px;
+            color: #007bff;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 15px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .section {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        /* スタイルを追加：Googleマップの埋め込みをレスポンシブにする */
+        .map-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            /* 16:9 アスペクト比 */
+            padding-top: 56.25%;
+            margin-bottom: 20px; /* マップの下に余白を追加 */
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0; /* iframeのボーダーを削除 */
+        }
+    </style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="ja"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;志戸平温泉家族旅行プラン&lt;/title&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>body {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>font-family: 'Arial', sans-serif;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>line-height: 1.6;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin: 0 auto;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>max-width: 800px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #f4f4f4;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #333;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1, h2, h3 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #0056b3;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h1 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-bottom: 2px solid #0056b3;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-bottom: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h2 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 30px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-left: 5px solid #0056b3;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 10px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>h3 {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-top: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>color: #007bff;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>p {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>ul {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-left: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>li {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.section {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>background-color: #fff;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding: 15px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border-radius: 8px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>/* スタイルを追加：Googleマップの埋め込みをレスポンシブにする */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.map-container {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: relative;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>overflow: hidden;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>/* 16:9 アスペクト比 */</p>
-<p class="p1"><span class="Apple-converted-space">            </span>padding-top: 56.25%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>margin-bottom: 20px; /* マップの下に余白を追加 */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">        </span>.map-container iframe {</p>
-<p class="p1"><span class="Apple-converted-space">            </span>position: absolute;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>top: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>left: 0;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>width: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>height: 100%;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>border: 0; /* iframeのボーダーを削除 */</p>
-<p class="p1"><span class="Apple-converted-space">        </span>}</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;h1&gt;岩手県花巻市志戸平温泉への家族旅行プラン（6月6日～7日）&lt;/h1&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;はじめに&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;盛岡市にお住まいの大人4名（ご両親、祖父母）、お子様2名（3歳、0歳）のご家族が、6月6日から1泊で花巻市の志戸平温泉へ旅行される計画について、6月6日から6月7日までのスケジュール案をご提案いたします。昼食は両日とも旅館の外で召し上がられる予定とのことですので、周辺の家族向けの食事施設に加え、お子様と一緒に楽しめる志戸平温泉の館内施設や周辺イベントについてもご案内いたします。料金や予定滞在時間についても可能な限り情報を提供いたします。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;1日目：6月6日（木） - 志戸平温泉へ&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;午前：盛岡市から志戸平温泉へ&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;盛岡市から志戸平温泉への移動手段としては、ご家族の人数や荷物の量、お子様の年齢を考慮すると、レンタカーが最も柔軟で便利な選択肢と考えられます。特に0歳のお子様がいらっしゃる場合、公共交通機関の乗り換えや時間に縛られることなく、休憩を挟みながら移動できるメリットは大きいでしょう。所要時間は、盛岡市内から花巻市内を経由して志戸平温泉まで、通常であれば1時間半から2時間程度を見込むと良いでしょう。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;公共交通機関を利用する場合は、まずJR盛岡駅から東北本線または東北新幹線で花巻駅または新花巻駅まで移動し、そこから路線バスに乗り換える必要があります。新幹線を利用すれば盛岡駅から新花巻駅まで約20分ですが、乗り換えやバスの待ち時間などを考慮すると、レンタカーよりも時間がかかる可能性があります。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="map-container"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;iframe src="https://maps.google.com/maps?q=岩手県花巻市湯口字志戸平27-1&amp;hl=ja&amp;z=14&amp;output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"&gt;&lt;/iframe&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;午後：花巻市内での昼食&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;志戸平温泉へ向かう途中、花巻市内で昼食をとることを想定し、お子様連れでも入りやすいレストランをいくつかご紹介します。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;レストラン 北の家族&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;花巻市松園町にある「レストラン 北の家族」は、40年以上愛されているという気取らない雰囲気の洋食レストランです。ハンバーグやエビフライなど、お子様に人気のメニューが豊富に揃っており、ご家族での食事に最適です。おすすめメニューは「チーズハンバーグ海老フライ付き」（1,738円）です。営業時間は11:00～15:00（ラストオーダー14:30）、18:00～20:00（ラストオーダー20:00）で、月曜日と火曜日が定休日です。駐車場も13台分用意されています。また、ハンバーグランチ（日替わり1,089円）をはじめ、他にも様々なランチセットがあるようです。花巻市内で気軽に洋食を楽しみたい場合に良いでしょう。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;嘉司屋&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;花巻市東町にある「嘉司屋」は、そばや丼ものなど、和食を中心としたメニューを提供している食事処です。平日の昼限定で、「ひるそばセット」（850円）や「ひる丼セット」（890円）があり、それぞれ数種類の中から選ぶことができます。お子様向けのメニューとしては、玉子丼（630円）などがあります。営業時間は月・木・金が11時～14時、土・日が11時～14時と17時～20時で、火曜日と水曜日が定休日です。駐車場は20台分あります。和食を希望される場合や、そば好きのお子様がいる場合に適しています。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;やぶ屋花巻総本店&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;花巻駅近くにある「やぶ屋花巻総本店」も、そばを中心とした和食を提供する人気店です。詳細なメニューや子連れ向けのサービスに関する記述は見当たりませんでしたが、地元で評判の良いお店であるため、選択肢の一つとして考慮できます。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;昼食の予定滞在時間は、レストランでの食事時間として通常1時間から1時間半程度を見込んでおくと良いでしょう。予約が可能であれば、事前に席の予約をしておくことをおすすめします。また、乳幼児用の椅子（ハイチェアやブースターシート）の有無についても、予約時または入店時に確認しておくと安心です。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;午後：志戸平温泉での館内施設利用&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;志戸平温泉に到着後、チェックインを済ませたら、館内にあるお子様向けの施設を利用して過ごすのがおすすめです。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;ヒカリノモリ キッズコーナー&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;湯の杜 ホテル志戸平のレストラン「ヒカリノモリ」には、お子様向けの「MORI×MORIキッズコーナー」が設置されています。ここでは、子供たちが大好きなメニューが豊富に用意されており、お子様自身が取りやすいように料理台の高さも低めに設定されています。幼児向けには離乳食の用意もあるとのことです。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;キッズルーム&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;レストラン「ヒカリノモリ」の一角にはキッズルームも併設されており、食後に飽きてしまう心配がありません。お子様が食事を終えた後も、家族みんなで楽しく過ごせるファミリーエリアとなっています。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;ウェルカムベビー認定&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;湯の杜 ホテル志戸平は、ミキハウス子育て総研による「ウェルカムベビーのお宿」に認定されており、赤ちゃんや小さなお子様連れに優しい様々なサービスやアメニティが用意されています。例えば、ウェルカムベビータイプの客室には、バンボチェア、子供用ハンガー、おまる、踏み台、おむつ用ごみ箱、おしりふき、絵本などが備えられています。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;あそびの森・ガチャモンの森&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;ホテル内には、花巻おもちゃ美術館が監修する「あそびの森」という木のおもちゃで遊べるスペースや、「ガチャモンの森」という約80台のカプセルトイマシンが設置された暖かい木製の空間もあります。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;プール&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;ホテルにはプールも完備されています。3歳のお子様にとっては、楽しいアクティビティとなるでしょう。利用時間や年齢制限については、事前にホテルに確認することをおすすめします。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;貸切風呂&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;小さなお子様やご高齢の祖父母がいらっしゃる場合、家族でゆっくりと温泉を楽しめる貸切風呂の利用もおすすめです。料金は、露天風呂付きの「黄金の湯」が60分3,000円（税込）、陶器の湯・ひばの湯が60分2,000円（税込）です。予約は当日フロントまたは事前予約が可能です。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;これらの館内施設を利用して、午後の時間を2～3時間程度楽しむことができるでしょう。プールや貸切風呂の利用には別途料金がかかる場合がありますので、事前に確認しておくと良いでしょう。志戸平温泉は、小さなお子様連れのご家族にとって非常に快適に過ごせる環境が整っていると言えます。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;夕食：志戸平温泉&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;夕食は、ホテル内のレストランでとるのが便利でしょう。特に、お子様向けのメニューが充実している「ヒカリノモリ」でのバイキングがおすすめです。ライブキッチンでは、シェフが目の前で調理する様子を見ることができ、子供たちにとっても楽しい体験となるでしょう。また、和食を希望される場合は、ホテル内の和食処「又三郎」も選択肢の一つですが、現在昼の部のみの営業となっているようです。夕食の予約やメニューの詳細については、ホテルに直接お問い合わせください。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;2日目：6月7日（金） - 周辺観光と帰路&lt;/h2&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;午前：周辺の子供向け施設&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;2日目の午前中は、志戸平温泉周辺にある子供向けの施設を訪れるのがおすすめです。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;花巻おもちゃ美術館&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;花巻市上町にある「花巻おもちゃ美術館」は、岩手県産材をふんだんに使用した体験型の木育施設です。0歳から100歳まで楽しめるように設計されており、「ゲームのもり」「グッド・トイのもり」「赤ちゃん木育のもり」など、様々なテーマの部屋があります。開館時間は10:00～16:00（最終入館15:30）で、水曜日と年末年始が休館日です。入館料は、中学生以上900円、1歳～小学生700円、1歳未満は無料です。マルカンビル2階に位置しており、後述するマルカンビル大食堂での昼食にも便利です。3歳のお子様にとって、様々な木のおもちゃに触れて遊べる楽しい場所となるでしょう。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;宮沢賢治童話村&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;花巻市高松にある「宮沢賢治童話村」は、宮沢賢治の童話の世界を体験できる施設です。メイン施設である「賢治の学校」は、宇宙、大地、天空、水、森の5つのゾーンに分かれており、賢治の作品をイメージした展示がされています。開館時間は8:30～16:30で、12月28日～1月1日が休館日です。入場料は、大人350円、高校生・大学生250円、小中学生150円です。3歳のお子様には、広々とした空間や自然に触れることができる点が魅力かもしれません。大人は賢治の世界観に浸ることができるでしょう。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;花巻市花と緑のまつり&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;旅行期間中の6月6日（木）から8日（土）まで、花巻市総合体育館で「花巻市花と緑のまつり」が開催されます。花や緑の展示、園芸相談、花苗の無料配布（日時限定）、寄せ植え体験、ワークショップ、ステージイベントなど、様々な催しが行われます。入場は無料です。開催時間は10:00～16:00（最終日は15:00まで）です。花や自然に触れる良い機会となるでしょう。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;岩手県立花巻広域公園&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;花巻市金矢にある「岩手県立花巻広域公園」には、様々な遊具が揃った「ちびっこ広場」があり、思い切り体を動かして遊ぶことができます。釣りを楽しめる池や、散策に適した遊歩道もあります。広大な敷地で、3歳のお子様が自由に走り回ることができるでしょう。祖父母の方も、天気が良ければ散策を楽しむことができます。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;これらの施設の中から、ご家族の興味や体力に合わせて2～3箇所を選んで訪問すると良いでしょう。移動時間や各施設の滞在時間を含め、午前中の予定として3～4時間程度を見込んでください。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;午後：花巻市内での昼食（2日目）&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;2日目の昼食も花巻市内でとることを想定し、異なる選択肢をいくつかご提案します。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;マルカンビル大食堂&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;花巻市上町にあるマルカンビルの6階にある「マルカンビル大食堂」は、昭和レトロな雰囲気の大衆食堂です。寿司、洋食、カレー、ラーメンなど、豊富なメニューが揃っており、お子様向けのキッズプレート（エビフライ、チキンライス、唐揚げ、ハンバーグ、サラダ）もあります。名物の10段ソフトクリームは、見た目のインパクトも大きく、家族みんなで楽しめるでしょう。営業時間11:00～18:30（ラストオーダー18:00）、水曜日定休です。花巻おもちゃ美術館と同じ建物内にあるため、午前中に美術館を訪れた場合は非常に便利です。懐かしい雰囲気の中で、多様なメニューを楽しめる点が魅力です。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;山猫軒&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;花巻市矢沢にある「山猫軒」は、宮沢賢治の童話「注文の多い料理店」をモチーフにしたレストランです。山猫すいとんセットや鹿踊りそばなど、ユニークなメニューが楽しめます。そばやカレーなど、お子様も食べやすいメニューもあります。営業時間は9:00～16:00（ラストオーダー）、売店は17:00までです。1月から3月までは火曜日が定休、年末年始も休業です。宮沢賢治童話村の近くに位置しているため、午前中に童話村を訪れた場合は、昼食に立ち寄るのも良いでしょう。賢治の世界観を食事とともに楽しめる、テーマ性のあるレストランです。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;お食事処・観光釣り堀 孝和園&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;花巻市東和町にある「お食事処・観光釣り堀 孝和園」は、食事処に釣り堀が併設された施設です。もり天（そばと天ぷら）が一番人気で、他にも豚丼やラーメンなどがあります。4月中旬から12月中旬までは、釣り堀で釣った魚をその場で調理してもらうこともできます。畳席もあり、小さなお子様連れでも安心です。営業時間は11:00～21:00（ラストオーダー20:00）で、水曜日が定休日です（祝日の場合は営業）。釣り好きのお子様がいる場合や、自然の中で食事を楽しみたい場合に適しています。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;これらのレストランから、前日の選択と異なる雰囲気や料理を選ぶのも良いでしょう。昼食の予定滞在時間は、1時間から1時間半程度を見込んでください。0歳のお子様には、離乳食の持ち込みが可能か、またはベビーフードの用意があるかなどを事前に確認しておくと良いでしょう。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h3&gt;午後：帰路または追加観光&lt;/h3&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;午後の過ごし方としては、午前中に訪れた場所でさらに時間を過ごしたり、まだ時間に余裕があれば、別の観光スポットに立ち寄ることもできます。例えば、花巻おもちゃ美術館とマルカンビル大食堂は同じ建物内にあるため、午前中に美術館を楽しんだ後、食堂で昼食をとり、午後は温泉に戻ってゆっくり過ごすというプランも考えられます。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;または、宮沢賢治童話村と山猫軒を訪れた後、時間に余裕があれば、花巻広域公園で遊んでから帰路につくのも良いでしょう。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;盛岡市への帰路の時間を考慮し、特に小さなお子様の負担にならないよう、無理のないスケジュールで計画を立てることが大切です。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;志戸平温泉の子供向け設備詳細&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;志戸平温泉（湯の杜 ホテル志戸平）は、お子様連れのご家族に非常に優しい宿泊施設です。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;MORI×MORIキッズコーナー&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;レストラン「ヒカリノモリ」にあるキッズコーナーでは、ハンバーグ、エビフライ、唐揚げなど、お子様が大好きなメニューが豊富に用意されています。子供たちが自分で料理を選びやすいように、カウンターの高さが低く設計されています。また、幼児向けには市販のベビーフードや白粥も用意されており、アレルギー情報も表示されています。隣接するキッズルームでは、食事を終えたお子様が遊んで待つことができるため、親御さんもゆっくりと食事を楽しむことができます。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;ウェルカムベビーサービス&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;「ウェルカムベビーのお宿」として、客室にはベビーベッド（要予約）、おねしょシーツ、哺乳瓶消毒セットなどの貸出品や、おむつ、おしりふき、ベビーソープなどのアメニティが用意されています。レストランでは、子供用の食器や紙エプロン、ジュースやミルクなどが提供され、ベビーチェアやブースターシートも利用できます。授乳室も完備されているため、赤ちゃん連れでも安心して滞在できます。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;あそびの森&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;花巻おもちゃ美術館がプロデュースする「あそびの森」は、木製の遊具やおもちゃがたくさんあり、子供たちが自然素材に触れながら遊ぶことができます。開館時間は8:00～20:00です。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;ガチャモンの森&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;約80台のカプセルトイマシンが並ぶ「ガチャモンの森」は、子供たちにとってわくわくする空間です。営業時間は7:00～22:00です。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;プール&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;屋内プールがあり、夏季には水遊びを楽しむことができます。子供用のアームヘルパーなどの貸し出しがあるか、事前に確認すると良いでしょう。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h4&gt;貸切風呂&lt;/h4&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;プライベートな空間で温泉を楽しめる貸切風呂は、小さなお子様連れやご高齢の方にも好評です。事前の予約をおすすめします。&lt;/p&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;これらの充実した設備とサービスにより、志戸平温泉は小さなお子様連れのご家族にとって、非常に快適で楽しい滞在を提供してくれるでしょう。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;家族旅行のヒントとおすすめ&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;小さなお子様やご高齢の方との旅行では、事前の準備と当日の柔軟な対応が重要です。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;持ち物:&lt;/strong&gt; お子様の着替え、おむつ、おしりふき、ミルク、離乳食、常備薬、保険証、お気に入りのおもちゃや絵本など、必要なものを忘れずに持参しましょう。祖父母の方の常備薬や必要なものも確認しておきましょう。&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;移動:&lt;/strong&gt; レンタカーを利用する場合は、チャイルドシートの準備を忘れずに行い、休憩をこまめにとりながら安全運転を心がけましょう。公共交通機関を利用する場合は、事前に時刻表や乗り換え情報を確認し、時間に余裕をもって行動しましょう。&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;スケジュール:&lt;/strong&gt; 今回ご提案したスケジュールはあくまで一例です。お子様の体調や気分に合わせて、無理のない範囲で計画を調整してください。特に0歳のお子様のペースに合わせることが大切です。&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;食事:&lt;/strong&gt; レストランやホテルに事前に連絡し、アレルギーや食事の希望を伝えておくと安心です。ベビーフードや離乳食の持ち込みについても確認しておきましょう。&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;休憩:&lt;/strong&gt; 特に小さなお子様やご高齢の方は、疲れやすい場合があります。適度な休憩を挟みながら、無理のないペースで観光を楽しみましょう。&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">            </span>&lt;li&gt;&lt;strong&gt;情報収集:&lt;/strong&gt; 最新の施設の営業時間や料金、イベント情報などは、事前に各施設の公式サイトなどで確認することをおすすめします。&lt;/li&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;/ul&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="section"&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;h2&gt;まとめ&lt;/h2&gt;</p>
-<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;この度は、岩手県花巻市志戸平温泉へのご家族旅行プランをご提案させていただきました。志戸平温泉は、お子様連れに優しい設備やサービスが充実しており、周辺には家族で楽しめる観光スポットも豊富にあります。今回ご提案したスケジュール案が、ご家族皆様にとって思い出に残る素晴らしい旅行となる一助となれば幸いです。&lt;/p&gt;</p>
-<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+    <h1>岩手県花巻市志戸平温泉への家族旅行プラン（6月6日～7日）</h1>
+
+    <div class="section">
+        <h2>はじめに</h2>
+        <p>盛岡市にお住まいの大人4名（ご両親、祖父母）、お子様2名（3歳、0歳）のご家族が、6月6日から1泊で花巻市の志戸平温泉へ旅行される計画について、6月6日から6月7日までのスケジュール案をご提案いたします。昼食は両日とも旅館の外で召し上がられる予定とのことですので、周辺の家族向けの食事施設に加え、お子様と一緒に楽しめる志戸平温泉の館内施設や周辺イベントについてもご案内いたします。料金や予定滞在時間についても可能な限り情報を提供いたします。</p>
+    </div>
+
+    <div class="section">
+        <h2>1日目：6月6日（木） - 志戸平温泉へ</h2>
+
+        <h3>午前：盛岡市から志戸平温泉へ</h3>
+        <p>盛岡市から志戸平温泉への移動手段としては、ご家族の人数や荷物の量、お子様の年齢を考慮すると、レンタカーが最も柔軟で便利な選択肢と考えられます。特に0歳のお子様がいらっしゃる場合、公共交通機関の乗り換えや時間に縛られることなく、休憩を挟みながら移動できるメリットは大きいでしょう。所要時間は、盛岡市内から花巻市内を経由して志戸平温泉まで、通常であれば1時間半から2時間程度を見込むと良いでしょう。</p>
+        <p>公共交通機関を利用する場合は、まずJR盛岡駅から東北本線または東北新幹線で花巻駅または新花巻駅まで移動し、そこから路線バスに乗り換える必要があります。新幹線を利用すれば盛岡駅から新花巻駅まで約20分ですが、乗り換えやバスの待ち時間などを考慮すると、レンタカーよりも時間がかかる可能性があります。</p>
+
+        <div class="map-container">
+            <iframe src="https://maps.google.com/maps?q=岩手県花巻市湯口字志戸平27-1&hl=ja&z=14&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <h3>午後：花巻市内での昼食</h3>
+        <p>志戸平温泉へ向かう途中、花巻市内で昼食をとることを想定し、お子様連れでも入りやすいレストランをいくつかご紹介します。</p>
+
+        <h4>レストラン 北の家族</h4>
+        <p>花巻市松園町にある「レストラン 北の家族」は、40年以上愛されているという気取らない雰囲気の洋食レストランです。ハンバーグやエビフライなど、お子様に人気のメニューが豊富に揃っており、ご家族での食事に最適です。おすすめメニューは「チーズハンバーグ海老フライ付き」（1,738円）です。営業時間は11:00～15:00（ラストオーダー14:30）、18:00～20:00（ラストオーダー20:00）で、月曜日と火曜日が定休日です。駐車場も13台分用意されています。また、ハンバーグランチ（日替わり1,089円）をはじめ、他にも様々なランチセットがあるようです。花巻市内で気軽に洋食を楽しみたい場合に良いでしょう。</p>
+
+        <h4>嘉司屋</h4>
+        <p>花巻市東町にある「嘉司屋」は、そばや丼ものなど、和食を中心としたメニューを提供している食事処です。平日の昼限定で、「ひるそばセット」（850円）や「ひる丼セット」（890円）があり、それぞれ数種類の中から選ぶことができます。お子様向けのメニューとしては、玉子丼（630円）などがあります。営業時間は月・木・金が11時～14時、土・日が11時～14時と17時～20時で、火曜日と水曜日が定休日です。駐車場は20台分あります。和食を希望される場合や、そば好きのお子様がいる場合に適しています。</p>
+
+        <h4>やぶ屋花巻総本店</h4>
+        <p>花巻駅近くにある「やぶ屋花巻総本店」も、そばを中心とした和食を提供する人気店です。詳細なメニューや子連れ向けのサービスに関する記述は見当たりませんでしたが、地元で評判の良いお店であるため、選択肢の一つとして考慮できます。</p>
+
+        <p>昼食の予定滞在時間は、レストランでの食事時間として通常1時間から1時間半程度を見込んでおくと良いでしょう。予約が可能であれば、事前に席の予約をしておくことをおすすめします。また、乳幼児用の椅子（ハイチェアやブースターシート）の有無についても、予約時または入店時に確認しておくと安心です。</p>
+
+        <h3>午後：志戸平温泉での館内施設利用</h3>
+        <p>志戸平温泉に到着後、チェックインを済ませたら、館内にあるお子様向けの施設を利用して過ごすのがおすすめです。</p>
+
+        <h4>ヒカリノモリ キッズコーナー</h4>
+        <p>湯の杜 ホテル志戸平のレストラン「ヒカリノモリ」には、お子様向けの「MORI×MORIキッズコーナー」が設置されています。ここでは、子供たちが大好きなメニューが豊富に用意されており、お子様自身が取りやすいように料理台の高さも低めに設定されています。幼児向けには離乳食の用意もあるとのことです。</p>
+
+        <h4>キッズルーム</h4>
+        <p>レストラン「ヒカリノモリ」の一角にはキッズルームも併設されており、食後に飽きてしまう心配がありません。お子様が食事を終えた後も、家族みんなで楽しく過ごせるファミリーエリアとなっています。</p>
+
+        <h4>ウェルカムベビー認定</h4>
+        <p>湯の杜 ホテル志戸平は、ミキハウス子育て総研による「ウェルカムベビーのお宿」に認定されており、赤ちゃんや小さなお子様連れに優しい様々なサービスやアメニティが用意されています。例えば、ウェルカムベビータイプの客室には、バンボチェア、子供用ハンガー、おまる、踏み台、おむつ用ごみ箱、おしりふき、絵本などが備えられています。</p>
+
+        <h4>あそびの森・ガチャモンの森</h4>
+        <p>ホテル内には、花巻おもちゃ美術館が監修する「あそびの森」という木のおもちゃで遊べるスペースや、「ガチャモンの森」という約80台のカプセルトイマシンが設置された暖かい木製の空間もあります。</p>
+
+        <h4>プール</h4>
+        <p>ホテルにはプールも完備されています。3歳のお子様にとっては、楽しいアクティビティとなるでしょう。利用時間や年齢制限については、事前にホテルに確認することをおすすめします。</p>
+
+        <h4>貸切風呂</h4>
+        <p>小さなお子様やご高齢の祖父母がいらっしゃる場合、家族でゆっくりと温泉を楽しめる貸切風呂の利用もおすすめです。料金は、露天風呂付きの「黄金の湯」が60分3,000円（税込）、陶器の湯・ひばの湯が60分2,000円（税込）です。予約は当日フロントまたは事前予約が可能です。</p>
+
+        <p>これらの館内施設を利用して、午後の時間を2～3時間程度楽しむことができるでしょう。プールや貸切風呂の利用には別途料金がかかる場合がありますので、事前に確認しておくと良いでしょう。志戸平温泉は、小さなお子様連れのご家族にとって非常に快適に過ごせる環境が整っていると言えます。</p>
+
+        <h3>夕食：志戸平温泉</h3>
+        <p>夕食は、ホテル内のレストランでとるのが便利でしょう。特に、お子様向けのメニューが充実している「ヒカリノモリ」でのバイキングがおすすめです。ライブキッチンでは、シェフが目の前で調理する様子を見ることができ、子供たちにとっても楽しい体験となるでしょう。また、和食を希望される場合は、ホテル内の和食処「又三郎」も選択肢の一つですが、現在昼の部のみの営業となっているようです。夕食の予約やメニューの詳細については、ホテルに直接お問い合わせください。</p>
+    </div>
+
+    <div class="section">
+        <h2>2日目：6月7日（金） - 周辺観光と帰路</h2>
+
+        <h3>午前：周辺の子供向け施設</h3>
+        <p>2日目の午前中は、志戸平温泉周辺にある子供向けの施設を訪れるのがおすすめです。</p>
+
+        <h4>花巻おもちゃ美術館</h4>
+        <p>花巻市上町にある「花巻おもちゃ美術館」は、岩手県産材をふんだんに使用した体験型の木育施設です。0歳から100歳まで楽しめるように設計されており、「ゲームのもり」「グッド・トイのもり」「赤ちゃん木育のもり」など、様々なテーマの部屋があります。開館時間は10:00～16:00（最終入館15:30）で、水曜日と年末年始が休館日です。入館料は、中学生以上900円、1歳～小学生700円、1歳未満は無料です。マルカンビル2階に位置しており、後述するマルカンビル大食堂での昼食にも便利です。3歳のお子様にとって、様々な木のおもちゃに触れて遊べる楽しい場所となるでしょう。</p>
+
+        <h4>宮沢賢治童話村</h4>
+        <p>花巻市高松にある「宮沢賢治童話村」は、宮沢賢治の童話の世界を体験できる施設です。メイン施設である「賢治の学校」は、宇宙、大地、天空、水、森の5つのゾーンに分かれており、賢治の作品をイメージした展示がされています。開館時間は8:30～16:30で、12月28日～1月1日が休館日です。入場料は、大人350円、高校生・大学生250円、小中学生150円です。3歳のお子様には、広々とした空間や自然に触れることができる点が魅力かもしれません。大人は賢治の世界観に浸ることができるでしょう。</p>
+
+        <h4>花巻市花と緑のまつり</h4>
+        <p>旅行期間中の6月6日（木）から8日（土）まで、花巻市総合体育館で「花巻市花と緑のまつり」が開催されます。花や緑の展示、園芸相談、花苗の無料配布（日時限定）、寄せ植え体験、ワークショップ、ステージイベントなど、様々な催しが行われます。入場は無料です。開催時間は10:00～16:00（最終日は15:00まで）です。花や自然に触れる良い機会となるでしょう。</p>
+
+        <h4>岩手県立花巻広域公園</h4>
+        <p>花巻市金矢にある「岩手県立花巻広域公園」には、様々な遊具が揃った「ちびっこ広場」があり、思い切り体を動かして遊ぶことができます。釣りを楽しめる池や、散策に適した遊歩道もあります。広大な敷地で、3歳のお子様が自由に走り回ることができるでしょう。祖父母の方も、天気が良ければ散策を楽しむことができます。</p>
+
+        <p>これらの施設の中から、ご家族の興味や体力に合わせて2～3箇所を選んで訪問すると良いでしょう。移動時間や各施設の滞在時間を含め、午前中の予定として3～4時間程度を見込んでください。</p>
+
+        <h3>午後：花巻市内での昼食（2日目）</h3>
+        <p>2日目の昼食も花巻市内でとることを想定し、異なる選択肢をいくつかご提案します。</p>
+
+        <h4>マルカンビル大食堂</h4>
+        <p>花巻市上町にあるマルカンビルの6階にある「マルカンビル大食堂」は、昭和レトロな雰囲気の大衆食堂です。寿司、洋食、カレー、ラーメンなど、豊富なメニューが揃っており、お子様向けのキッズプレート（エビフライ、チキンライス、唐揚げ、ハンバーグ、サラダ）もあります。名物の10段ソフトクリームは、見た目のインパクトも大きく、家族みんなで楽しめるでしょう。営業時間11:00～18:30（ラストオーダー18:00）、水曜日定休です。花巻おもちゃ美術館と同じ建物内にあるため、午前中に美術館を訪れた場合は非常に便利です。懐かしい雰囲気の中で、多様なメニューを楽しめる点が魅力です。</p>
+
+        <h4>山猫軒</h4>
+        <p>花巻市矢沢にある「山猫軒」は、宮沢賢治の童話「注文の多い料理店」をモチーフにしたレストランです。山猫すいとんセットや鹿踊りそばなど、ユニークなメニューが楽しめます。そばやカレーなど、お子様も食べやすいメニューもあります。営業時間は9:00～16:00（ラストオーダー）、売店は17:00までです。1月から3月までは火曜日が定休、年末年始も休業です。宮沢賢治童話村の近くに位置しているため、午前中に童話村を訪れた場合は、昼食に立ち寄るのも良いでしょう。賢治の世界観を食事とともに楽しめる、テーマ性のあるレストランです。</p>
+
+        <h4>お食事処・観光釣り堀 孝和園</h4>
+        <p>花巻市東和町にある「お食事処・観光釣り堀 孝和園」は、食事処に釣り堀が併設された施設です。もり天（そばと天ぷら）が一番人気で、他にも豚丼やラーメンなどがあります。4月中旬から12月中旬までは、釣り堀で釣った魚をその場で調理してもらうこともできます。畳席もあり、小さなお子様連れでも安心です。営業時間は11:00～21:00（ラストオーダー20:00）で、水曜日が定休日です（祝日の場合は営業）。釣り好きのお子様がいる場合や、自然の中で食事を楽しみたい場合に適しています。</p>
+
+        <p>これらのレストランから、前日の選択と異なる雰囲気や料理を選ぶのも良いでしょう。昼食の予定滞在時間は、1時間から1時間半程度を見込んでください。0歳のお子様には、離乳食の持ち込みが可能か、またはベビーフードの用意があるかなどを事前に確認しておくと良いでしょう。</p>
+
+        <h3>午後：帰路または追加観光</h3>
+        <p>午後の過ごし方としては、午前中に訪れた場所でさらに時間を過ごしたり、まだ時間に余裕があれば、別の観光スポットに立ち寄ることもできます。例えば、花巻おもちゃ美術館とマルカンビル大食堂は同じ建物内にあるため、午前中に美術館を楽しんだ後、食堂で昼食をとり、午後は温泉に戻ってゆっくり過ごすというプランも考えられます。</p>
+        <p>または、宮沢賢治童話村と山猫軒を訪れた後、時間に余裕があれば、花巻広域公園で遊んでから帰路につくのも良いでしょう。</p>
+        <p>盛岡市への帰路の時間を考慮し、特に小さなお子様の負担にならないよう、無理のないスケジュールで計画を立てることが大切です。</p>
+    </div>
+
+    <div class="section">
+        <h2>志戸平温泉の子供向け設備詳細</h2>
+        <p>志戸平温泉（湯の杜 ホテル志戸平）は、お子様連れのご家族に非常に優しい宿泊施設です。</p>
+
+        <h4>MORI×MORIキッズコーナー</h4>
+        <p>レストラン「ヒカリノモリ」にあるキッズコーナーでは、ハンバーグ、エビフライ、唐揚げなど、お子様が大好きなメニューが豊富に用意されています。子供たちが自分で料理を選びやすいように、カウンターの高さが低く設計されています。また、幼児向けには市販のベビーフードや白粥も用意されており、アレルギー情報も表示されています。隣接するキッズルームでは、食事を終えたお子様が遊んで待つことができるため、親御さんもゆっくりと食事を楽しむことができます。</p>
+
+        <h4>ウェルカムベビーサービス</h4>
+        <p>「ウェルカムベビーのお宿」として、客室にはベビーベッド（要予約）、おねしょシーツ、哺乳瓶消毒セットなどの貸出品や、おむつ、おしりふき、ベビーソープなどのアメニティが用意されています。レストランでは、子供用の食器や紙エプロン、ジュースやミルクなどが提供され、ベビーチェアやブースターシートも利用できます。授乳室も完備されているため、赤ちゃん連れでも安心して滞在できます。</p>
+
+        <h4>あそびの森</h4>
+        <p>花巻おもちゃ美術館がプロデュースする「あそびの森」は、木製の遊具やおもちゃがたくさんあり、子供たちが自然素材に触れながら遊ぶことができます。開館時間は8:00～20:00です。</p>
+
+        <h4>ガチャモンの森</h4>
+        <p>約80台のカプセルトイマシンが並ぶ「ガチャモンの森」は、子供たちにとってわくわくする空間です。営業時間は7:00～22:00です。</p>
+
+        <h4>プール</h4>
+        <p>屋内プールがあり、夏季には水遊びを楽しむことができます。子供用のアームヘルパーなどの貸し出しがあるか、事前に確認すると良いでしょう。</p>
+
+        <h4>貸切風呂</h4>
+        <p>プライベートな空間で温泉を楽しめる貸切風呂は、小さなお子様連れやご高齢の方にも好評です。事前の予約をおすすめします。</p>
+
+        <p>これらの充実した設備とサービスにより、志戸平温泉は小さなお子様連れのご家族にとって、非常に快適で楽しい滞在を提供してくれるでしょう。</p>
+    </div>
+
+    <div class="section">
+        <h2>家族旅行のヒントとおすすめ</h2>
+        <p>小さなお子様やご高齢の方との旅行では、事前の準備と当日の柔軟な対応が重要です。</p>
+        <ul>
+            <li><strong>持ち物:</strong> お子様の着替え、おむつ、おしりふき、ミルク、離乳食、常備薬、保険証、お気に入りのおもちゃや絵本など、必要なものを忘れずに持参しましょう。祖父母の方の常備薬や必要なものも確認しておきましょう。</li>
+            <li><strong>移動:</strong> レンタカーを利用する場合は、チャイルドシートの準備を忘れずに行い、休憩をこまめにとりながら安全運転を心がけましょう。公共交通機関を利用する場合は、事前に時刻表や乗り換え情報を確認し、時間に余裕をもって行動しましょう。</li>
+            <li><strong>スケジュール:</strong> 今回ご提案したスケジュールはあくまで一例です。お子様の体調や気分に合わせて、無理のない範囲で計画を調整してください。特に0歳のお子様のペースに合わせることが大切です。</li>
+            <li><strong>食事:</strong> レストランやホテルに事前に連絡し、アレルギーや食事の希望を伝えておくと安心です。ベビーフードや離乳食の持ち込みについても確認しておきましょう。</li>
+            <li><strong>休憩:</strong> 特に小さなお子様やご高齢の方は、疲れやすい場合があります。適度な休憩を挟みながら、無理のないペースで観光を楽しみましょう。</li>
+            <li><strong>情報収集:</strong> 最新の施設の営業時間や料金、イベント情報などは、事前に各施設の公式サイトなどで確認することをおすすめします。</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h2>まとめ</h2>
+        <p>この度は、岩手県花巻市志戸平温泉へのご家族旅行プランをご提案させていただきました。志戸平温泉は、お子様連れに優しい設備やサービスが充実しており、周辺には家族で楽しめる観光スポットも豊富にあります。今回ご提案したスケジュール案が、ご家族皆様にとって思い出に残る素晴らしい旅行となる一助となれば幸いです。</p>
+    </div>
+
 </body>
 </html>
